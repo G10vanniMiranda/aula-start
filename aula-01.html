@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Aula 01</title>
+</head>
+<body>
+    <h1>Aula 01</h1>
+
+    <div>
+        <button class="btn btn-primary">
+            <i class="bi bi-xbox"></i>
+            Entrar
+        </button>
+        <button class="btn btn-danger">
+            <i class="bi bi-arrow-up-left-circle-fill"></i>
+            Cadastrar
+        </button>
+        <button class="btn btn-info">
+            <i class="bi bi-bag-fill"></i>
+            Inserir
+        </button>
+        <button class="btn btn-dark">
+            <i class="bi bi-bar-chart-fill"></i>
+            Perfil
+        </button>
+    </div>
+
+    <form>
+        <div class="row">
+            <input type="text" placeholder="Nome completo">
+            <input type="text" placeholder="E-mail">
+        </div>
+        <div class="row">
+            <input type="text" placeholder="valor1" id="valor1">
+            <input type="text" placeholder="valor2" id="valor2">
+        </div>
+        <div class="row">
+            <select>
+                <option value="f">Feminino</option>
+                <option value="m">Masculino</option>
+            </select>
+            <button id="btn"  class="btn btn-danger">
+                <i class="bi bi-person-fill-add"></i>
+            </button>
+            <button id="btn2"  class="btn btn-primary">
+                <i class="bi bi-person-fill-add"></i>
+            </button>
+        </div>
+    </form>
+
+    <script>
+        var btn = document.querySelector("#btn")
+        var btn2 = document.querySelector("#btn2")
+        var input = document.querySelector("valor1")
+        
+        btn.onclick = () => {
+            alert('Seja bem vindo novo aluno')
+        }
+
+        btn2.onclick = () => {
+            alert(valor1.value)
+        }
+    </script>
+
+    <style>
+        div{ display: flex; gap: 10px; }
+        body{
+            color: #fff;
+            background-color: blue;
+        }
+        form{
+            margin-top: 20px;
+            width: 500px;
+            height: 150px;
+            background-color: #000;
+
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border-radius: 7px;
+            margin-left: 550px;
+        }
+        input, select{ 
+            width: 150px;
+            color: #fff;
+            padding: 10px;
+            border-radius: 7px;
+            border: none;
+            outline: none;
+            background-color: #1c1c1c;
+            transition: .9s;
+        }
+        select{
+            text-align: center;
+        }
+        input:focus{
+            width: 200px;
+        }
+
+        .btn{
+            width: 100px;
+            height: 40px;
+            font-size: 14px;
+
+            border: none;
+            cursor: pointer;
+            border-radius: 7px;
+            transition: .9s;
+        }
+        .btn-primary{
+            color: #fff;
+            background-color: blueviolet;
+        }
+        .btn-info{
+            color: #000;
+            background-color: #a9f04d;
+        }
+        .btn-danger{
+            color: #fff;
+            background-color: #fd2868;
+        }
+        .btn-dark{
+            color: #fff;
+            background-color: #1f1f20;
+        }
+        .btn:hover{
+            opacity: .7;
+        }
+
+        .bi{
+            color: #fff;
+            transition: .9s;
+        }
+        .bi:hover{
+            transform: rotate(360deg);
+            font-size: 20px;
+        }
+    </style>
+
+    
+</body>
+</html>
