@@ -18,7 +18,7 @@ git config --global user.email giovannimiranda09@gmail.com
 
 
 #### Atualizar um repositório
-    * add .
+    * git add .
     * git commit -m updated-3 || * git commit -m "fiz minha primeira aula de html e css"
     * git push
     
