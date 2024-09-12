@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <h2>Login</h2>
+
+        <div>
+            <a href="./painel.html">
+                <button type="button">Entrar</button>
+            </a>
+
+            <a href="./cadastro.html">
+                <button type="button">Cadastrar</button>
+            </a>
+        </div>
+    </header>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+        body{
+            color: white;
+            background-color: black;
+        }
+        header{
+            padding: 50px;
+            color: #000;
+            background-color: white;
+
+            gap: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        button{
+            width: 80px;
+            padding: 7px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 7px;
+            background-color: black;
+            margin: 5px;
+
+            transition: .9s;
+            opacity: .5;
+        }
+        button:hover{
+            transform: scale(1,2);
+            opacity: 1;
+        }
+    </style>
+</body>
+</html>
