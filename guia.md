@@ -3,7 +3,7 @@ git config --global user.name "Giovanni Miranda"
 git config --global user.email giovannimiranda09@gmail.com
 
 #### Salvando em um repositório novo.
-*   criar um repositório.
+*   criar um repositório.cls
 
 *   copiar as 4 ultimas linhas
 
