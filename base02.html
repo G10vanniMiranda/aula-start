@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 01</title>
+</head>
+<body>
+    <header>
+        <button>Produto</button>
+        <button>Serviços</button>
+        <button>Contato</button>
+    </header>
+
+    <button class="btnFloat">+</button>
+
+    <section id="product">Produto</section>
+    <section id="Service">Serviço</section>
+    <section id="Contact">Contato</section>
+
+    <style>
+        *{
+            margin: 0; padding: 0; box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            width: 100vw;
+            top: 0;
+            position: sticky;
+            height: 100px;
+            background-color: #1d1d1d;
+
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        section{
+            width: 100vw;
+            height: 100vh;
+            padding: 50px;
+        }
+        #Service{
+            background-color: blueviolet;
+        }
+        .btnFloat{ /* fixed, sticky, absolute*/
+            width: 50px;
+            height: 50px;
+            font-size: 25px;
+            color: white;
+            background-color: green;
+
+            right: 20px;
+            bottom: 50px;
+            position: fixed;
+
+            border-radius: 50%;
+        }   
+        
+    </style>
+
+</body>
+</html>
